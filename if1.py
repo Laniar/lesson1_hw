@@ -19,16 +19,15 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    # vAges = input()
     print('Сколько вам лет?')
-    print(testAges(input()))
+    print(test_ages(input()))
 
-def testAges(vAges):
-    if vAges == '' or vAges == None:
-      vAges=-999
-    vAges = int (vAges)
+def test_ages(v_ages):
+    if v_ages == '' or v_ages == None:
+      v_ages=-999
+    v_ages = int (v_ages)
     #Dictionaries
-    vAnswer = ['Вы ещё не родились, попробуйте снова месяцев через 9'
+    v_answer = ['Вы ещё не родились, попробуйте снова месяцев через 9'
     ,'Веселитесь. Вам никуда не нужно идти'
     ,'Детское дошкольное учереждение короткого режима ждёт вас'
     ,'Детское дошкольное учереждение долгого режима ждёт вас'
@@ -40,27 +39,26 @@ def testAges(vAges):
     ,'Вам пора в книгу рекордов гинеса!'
     ]
     #<--
-    if vAges < 0:
-      return vAnswer[0]
-    elif vAges <= 2:
-      return vAnswer[1]
-    elif vAges <= 4:
-      return vAnswer[2]
-    elif vAges <= 7:
-      return vAnswer[3]
-    elif vAges <= 17:
-      return vAnswer[4]
-    elif vAges <= 23:
-      return vAnswer[5]
-    elif vAges <= 65:
-      return vAnswer[6]
-      #print('Скорее всего вы работаете. Не переживайте пенсия ещё долеко!')
-    elif vAges <= 120:
-      return vAnswer[7]
-    elif vAges <= 154:
-      return vAnswer[8]
-    else:   # over999
-      return vAnswer[9]
+    if v_ages < 0:
+      return v_answer[0]
+    elif v_ages <= 2:
+      return v_answer[1]
+    elif v_ages <= 4:
+      return v_answer[2]
+    elif v_ages <= 7:
+      return v_answer[3]
+    elif v_ages <= 17:
+      return v_answer[4]
+    elif v_ages <= 23:
+      return v_answer[5]
+    elif v_ages <= 65:
+      return v_answer[6]
+    elif v_ages <= 120:
+      return v_answer[7]
+    elif v_ages <= 154:
+      return v_answer[8]
+    else:
+      return v_answer[9]
 
 if __name__ == "__main__":
     main()

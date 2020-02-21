@@ -11,31 +11,28 @@
 
 
 def ask_user():
-  vNumQuestion = 1
-  vListOfAnswers = []
+  v_num_question = 1
+  v_list_of_answers = []
 
-  # print("Как дела?")
   while True:
     print("Как дела?")
-    vAnswer = input() 
-    if vAnswer == "Хорошо":
-      if vNumQuestion == 1:
+    v_answer = input() 
+    if v_answer == "Хорошо":
+      if v_num_question == 1:
         print("Ого! С первого раза!")
-        print(vNumQuestion)
+        print(v_num_question)
         False
       
       else:
-        print('Отлично! И всего-то потребовалось '+str(vNumQuestion)+ ' вопросов')
+        print('Отлично! И всего-то потребовалось '+str(v_num_question)+ ' вопросов')
         print('А теперь, дава посмотрим что ты ответил до этого:')
-        for vAnswerCount in vListOfAnswers:
-          print(vAnswerCount)
-      
+        for v_answer_count in v_list_of_answers:
+          print(v_answer_count)
       
       break
     else:
-      vNumQuestion +=1    
-      vListOfAnswers += [vAnswer]
-      # ask_user()
+      v_num_question +=1    
+      v_list_of_answers += [v_answer]
       
     
 if __name__ == "__main__":

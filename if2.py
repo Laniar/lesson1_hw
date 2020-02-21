@@ -16,21 +16,20 @@
 """
 
 def main():
-    # vAges = input()
     print('Строка 1')
-    vString_001v = input()
+    v_string_001v = input()
     print('Строка 2')
-    vString_002v = input()
-    print(equel(vString_001v,vString_002v))
+    v_string_002v = input()
+    print(equel(v_string_001v,v_string_002v))
 
-def equel(vString_001v='',vString_002v=''):
-      if vString_001v == '' or vString_001v == None or vString_002v == '' or vString_002v == None:
+def equel(v_string_001v='',v_string_002v=''):
+      if v_string_001v == '' or v_string_001v == None or v_string_002v == '' or v_string_002v == None:
        return 0
-      elif vString_001v == vString_002v:
+      elif v_string_001v == v_string_002v:
        return 1
-      elif len(vString_001v) > len(vString_002v):
+      elif len(v_string_001v) > len(v_string_002v):
        return 2
-      elif vString_001v != vString_002v == 'learn' :
+      elif v_string_001v != v_string_002v == 'learn' :
        return 3
       else:
         return -1

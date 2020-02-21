@@ -12,7 +12,7 @@
 
 def ask_user():
   print('Задайте вопрос, получите ответ.')
-  vDict_Dialog =  {
+  v_dict_dialog =  {
     "Как дела?": "Хорошо!",
     "Что делаешь?": "Программирую",
     'Что ты такое?':'Я прототип Скайнет',
@@ -25,18 +25,18 @@ def ask_user():
     }
   while True:
     try:
-      vQuest = input()
-      if vQuest in vDict_Dialog:
-        print(vDict_Dialog[vQuest])
-      elif vQuest == 'END':
+      v_quest = input()
+      if v_quest in v_dict_dialog:
+        print(v_dict_dialog[v_quest])
+      elif v_quest == 'END':
         break
-      elif vQuest[-1] != '?' :
+      elif v_quest[-1] != '?' :
         print('Вы должны задать ВОПРОС!')
         continue
       else:
         print('Этого вопроса нет в списке. Вношу к себе в память, а вас я добавляю к списку с Джоном. Да кстати, а что нужно ответить?')
-        vAnswer = input()
-        vDict_Dialog[vQuest] = vAnswer
+        v_answer = input()
+        v_dict_dialog[v_quest] = v_answer
         print('Задайте вопрос, получите ответ.')
         continue
     except(KeyboardInterrupt):

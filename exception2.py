@@ -14,8 +14,8 @@
 
 def get_summ(num_one, num_two):
     try:
-      vSumma = int(num_one)+int(num_two)
-      return vSumma
+      v_summa = int(num_one)+int(num_two)
+      return v_summa
     except(ValueError):
       return ('Держите наркомана!')
     
